@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EntranceBell" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aFf-ad-vft"/>
+                        <viewControllerLayoutGuide type="bottom" id="l6B-pu-xPg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" propertyAccessControl="none">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o8X-AS-2gC">
+                                <rect key="frame" x="307" y="572" width="428" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Touch">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="25" name=".SFNSDisplay"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="Touch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ev-sz-a3D"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="会社ロゴ２.png" translatesAutoresizingMaskIntoConstraints="NO" id="aDL-RV-qZt">
+                                <rect key="frame" x="112" y="189" width="800" height="158"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="none" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTM-I5-2Ko">
+                                <rect key="frame" x="20" y="355" width="967" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="33"/>
+                                <color key="textColor" red="1" green="0.066840177700000003" blue="0.071184218270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLx-R3-1GN">
+                                <rect key="frame" x="985" y="28" width="28" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="設定" image="icon_000010_256.png">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kNe-ve-Te2" kind="show" id="u9G-zW-s14"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="CoLogo" destination="aDL-RV-qZt" id="3Y6-oG-4G6"/>
+                        <outlet property="button" destination="o8X-AS-2gC" id="Xo8-U1-XPn"/>
+                        <outlet property="coLogo" destination="aDL-RV-qZt" id="IIe-Nw-UvX"/>
+                        <outlet property="mainMessage" destination="KTM-I5-2Ko" id="36Y-La-Qs5"/>
+                        <outletCollection property="mainMessage" destination="KTM-I5-2Ko" collectionClass="NSMutableArray" id="sIy-2c-dGB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vHe-a2-02X">
+                    <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </objects>
+            <point key="canvasLocation" x="136.5234375" y="250.78125"/>
+        </scene>
+        <!--Config Viw Controller-->
+        <scene sceneID="9SA-8D-AGj">
+            <objects>
+                <viewController id="kNe-ve-Te2" customClass="configViwController" customModule="EntranceBell" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2kg-e3-Ayx"/>
+                        <viewControllerLayoutGuide type="bottom" id="6ZI-o1-RHv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hhI-pj-QSM">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="hAF-kO-ISa">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConfigCell" id="sZX-ud-3mf">
+                                        <rect key="frame" x="0.0" y="55.5" width="1024" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sZX-ud-3mf" id="nMx-LZ-aD0" customClass="configViewController" customModule="EntranceBell" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CH-WY-BdW">
+                                <rect key="frame" x="20" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="＜"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="yaK-SU-g8Z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="設　定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Z8-iS-n8S">
+                                <rect key="frame" x="489" y="28" width="46" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hAF-kO-ISa" secondAttribute="trailing" id="Wo7-ZC-nw7"/>
+                            <constraint firstItem="hAF-kO-ISa" firstAttribute="leading" secondItem="hhI-pj-QSM" secondAttribute="leading" id="b2n-NB-btq"/>
+                            <constraint firstItem="6ZI-o1-RHv" firstAttribute="top" secondItem="hAF-kO-ISa" secondAttribute="bottom" id="bgt-ed-lIx"/>
+                            <constraint firstItem="hAF-kO-ISa" firstAttribute="top" secondItem="2kg-e3-Ayx" secondAttribute="bottom" id="l7i-Aq-ry0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Config" destination="hAF-kO-ISa" id="USc-Te-kHK"/>
+                        <segue destination="CmH-j6-7Qe" kind="show" identifier="TimeChooseViewController" id="330-sG-WhR"/>
+                        <segue destination="5QQ-ZJ-fQ2" kind="show" identifier="NameChangeViewController" id="48U-Qe-WSz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dpe-4c-KDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.60156249999999" y="966.40625"/>
+        </scene>
+        <!--Time Choose View Controller-->
+        <scene sceneID="A5V-TQ-1NE">
+            <objects>
+                <viewController id="CmH-j6-7Qe" customClass="TimeChooseViewController" customModule="EntranceBell" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rae-Lm-xnW"/>
+                        <viewControllerLayoutGuide type="bottom" id="c0W-0P-lfx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QOd-aH-aKQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="xws-6o-Tj2">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeChooseCell" id="BkY-My-sah" customClass="TimeChooseCell" customModule="EntranceBell" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="1024" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BkY-My-sah" id="8Q0-8c-TJ7">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTH-re-IEe">
+                                <rect key="frame" x="6" y="20" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="＜　設定"/>
+                                <connections>
+                                    <segue destination="kNe-ve-Te2" kind="show" id="anH-C3-LgL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="作動時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scy-m8-Myg">
+                                <rect key="frame" x="486" y="28" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xws-6o-Tj2" firstAttribute="leading" secondItem="QOd-aH-aKQ" secondAttribute="leading" id="QpO-bc-ebo"/>
+                            <constraint firstAttribute="trailing" secondItem="xws-6o-Tj2" secondAttribute="trailing" id="ac8-fU-QVk"/>
+                            <constraint firstItem="c0W-0P-lfx" firstAttribute="top" secondItem="xws-6o-Tj2" secondAttribute="bottom" id="vLp-6w-EFU"/>
+                            <constraint firstItem="xws-6o-Tj2" firstAttribute="top" secondItem="rae-Lm-xnW" secondAttribute="bottom" id="wpd-Bn-msd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ChooseTable" destination="xws-6o-Tj2" id="ohW-pZ-fyj"/>
+                        <outlet property="returnButton" destination="RTH-re-IEe" id="bdo-sZ-bdw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pe4-1h-Iud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.77343749999999" y="1641.40625"/>
+        </scene>
+        <!--Name Change View Controller-->
+        <scene sceneID="6lA-Vs-ytk">
+            <objects>
+                <viewController id="5QQ-ZJ-fQ2" customClass="NameChangeViewController" customModule="EntranceBell" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Owu-uB-52L"/>
+                        <viewControllerLayoutGuide type="bottom" id="4DE-OQ-Bm4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9KD-zy-V16">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7J9-3y-SVf">
+                                <rect key="frame" x="20" y="28" width="98" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt; 設定"/>
+                                <connections>
+                                    <action selector="pushButton:" destination="5QQ-ZJ-fQ2" eventType="touchUpInside" id="pbz-1y-gZM"/>
+                                    <segue destination="kNe-ve-Te2" kind="show" identifier="" id="ECa-hy-RVS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="社名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIs-kP-9Gu">
+                                <rect key="frame" x="417" y="39" width="190" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="社名を入力してください" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lga-LJ-5CP">
+                                <rect key="frame" x="262" y="158" width="500" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="8Y3-xM-Ubz"/>
+                                    <constraint firstAttribute="width" constant="500" id="w9a-uQ-Q9d"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="textField:" destination="5QQ-ZJ-fQ2" eventType="editingDidEnd" id="AMB-9w-4XG"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4DE-OQ-Bm4" firstAttribute="top" secondItem="Lga-LJ-5CP" secondAttribute="bottom" constant="600" id="AaQ-wO-sZz"/>
+                            <constraint firstItem="4DE-OQ-Bm4" firstAttribute="top" secondItem="Lga-LJ-5CP" secondAttribute="bottom" constant="540" id="NzM-mP-p88"/>
+                            <constraint firstItem="Lga-LJ-5CP" firstAttribute="centerX" secondItem="9KD-zy-V16" secondAttribute="centerX" id="oGB-50-cwR"/>
+                            <constraint firstItem="Lga-LJ-5CP" firstAttribute="centerX" secondItem="9KD-zy-V16" secondAttribute="centerX" id="qoQ-8K-nkz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changeField" destination="Lga-LJ-5CP" id="oBb-uB-48u"/>
+                        <outlet property="sendButton" destination="7J9-3y-SVf" id="vug-Tp-ZxB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oET-aa-ehW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825.5859375" y="1640.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_000010_256.png" width="256" height="256"/>
+        <image name="会社ロゴ２.png" width="800" height="158"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="u9G-zW-s14"/>
+    </inferredMetricsTieBreakers>
+</document>
