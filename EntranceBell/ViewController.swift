@@ -58,6 +58,10 @@ class ViewController: UIViewController {
         }
     }
     
+    func noFunc(){
+        
+    }
+    
     override func didReceiveMemoryWarning(){
         super.didReceiveMemoryWarning()
     }
