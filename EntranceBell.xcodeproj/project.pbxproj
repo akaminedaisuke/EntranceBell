@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CE1C540121FD8D7D00E01031 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C540021FD8D7D00E01031 /* AppDelegate.swift */; };
-		CE1C540321FD8D7D00E01031 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C540221FD8D7D00E01031 /* ViewController.swift */; };
 		CE1C540621FD8D7D00E01031 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1C540421FD8D7D00E01031 /* Main.storyboard */; };
 		CE1C540821FD8D7D00E01031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1C540721FD8D7D00E01031 /* Assets.xcassets */; };
 		CE1C540B21FD8D7D00E01031 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1C540921FD8D7D00E01031 /* LaunchScreen.storyboard */; };
-		CE1C541621FD8D7E00E01031 /* EntranceBellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C541521FD8D7E00E01031 /* EntranceBellTests.swift */; };
 		CE1C542121FD8D7E00E01031 /* EntranceBellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C542021FD8D7E00E01031 /* EntranceBellUITests.swift */; };
 		CE1C543021FD8DD400E01031 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C542F21FD8DD400E01031 /* AVFoundation.framework */; };
 		CE2086BF224C863700EF86CA /* NameChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2086BE224C863700EF86CA /* NameChangeViewController.swift */; };
 		CE2258AA220818EF002178F3 /* 会社ロゴ２.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2258A9220818EF002178F3 /* 会社ロゴ２.png */; };
-		CE2258AB22082C6B002178F3 /* EntranceBellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C541521FD8D7E00E01031 /* EntranceBellTests.swift */; };
 		CE2E60622240D0480081662B /* icon_000010_256.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2E60612240D0480081662B /* icon_000010_256.png */; };
+		CE3685252260287200DE66D4 /* EntranceBellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C541521FD8D7E00E01031 /* EntranceBellTests.swift */; };
 		CE3B630B22004F1F009239B8 /* info-lady1_info-lady1-shibarakuomachi1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE1C74CD21FF00FD0030EB3B /* info-lady1_info-lady1-shibarakuomachi1.mp3 */; };
+		CEB156DF225F103500EE0AAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C540221FD8D7D00E01031 /* ViewController.swift */; };
+		CEB156E5225F1BCF00EE0AAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C540221FD8D7D00E01031 /* ViewController.swift */; };
+		CEB156E9225F1CAF00EE0AAC /* configViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5D67221BD6DB0026C7E4 /* configViewController.swift */; };
+		CEB156EA225F1CB200EE0AAC /* TimeChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5D6B221BDFAA0026C7E4 /* TimeChooseViewController.swift */; };
+		CEB156EB225F1CB500EE0AAC /* NameChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2086BE224C863700EF86CA /* NameChangeViewController.swift */; };
+		CEB156EC225F1CC000EE0AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C540021FD8D7D00E01031 /* AppDelegate.swift */; };
 		CEEC5D68221BD6DB0026C7E4 /* configViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5D67221BD6DB0026C7E4 /* configViewController.swift */; };
 		CEEC5D6C221BDFAA0026C7E4 /* TimeChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5D6B221BDFAA0026C7E4 /* TimeChooseViewController.swift */; };
 /* End PBXBuildFile section */
@@ -290,8 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB156E5225F1BCF00EE0AAC /* ViewController.swift in Sources */,
 				CEEC5D6C221BDFAA0026C7E4 /* TimeChooseViewController.swift in Sources */,
-				CE1C540321FD8D7D00E01031 /* ViewController.swift in Sources */,
 				CEEC5D68221BD6DB0026C7E4 /* configViewController.swift in Sources */,
 				CE1C540121FD8D7D00E01031 /* AppDelegate.swift in Sources */,
 				CE2086BF224C863700EF86CA /* NameChangeViewController.swift in Sources */,
@@ -302,7 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE1C541621FD8D7E00E01031 /* EntranceBellTests.swift in Sources */,
+				CEB156EC225F1CC000EE0AAC /* AppDelegate.swift in Sources */,
+				CEB156EA225F1CB200EE0AAC /* TimeChooseViewController.swift in Sources */,
+				CEB156EB225F1CB500EE0AAC /* NameChangeViewController.swift in Sources */,
+				CEB156E9225F1CAF00EE0AAC /* configViewController.swift in Sources */,
+				CE3685252260287200DE66D4 /* EntranceBellTests.swift in Sources */,
+				CEB156DF225F103500EE0AAC /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +319,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE2258AB22082C6B002178F3 /* EntranceBellTests.swift in Sources */,
 				CE1C542121FD8D7E00E01031 /* EntranceBellUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = S6MXFD7DM6;
 				INFOPLIST_FILE = EntranceBell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
@@ -493,6 +502,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = S6MXFD7DM6;
 				INFOPLIST_FILE = EntranceBell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
