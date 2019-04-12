@@ -57,6 +57,9 @@ class ViewController: UIViewController {
             self.mainMessage.text = "ご来社ありがとうございます。ようこそ" + self.userDefaults.string(forKey: "corporateName")! + "へ！\nご用の方は下のボタンにタッチして下さい。"
         }
     }
+    func  notFunc(){
+        
+    }
     
     override func didReceiveMemoryWarning(){
         super.didReceiveMemoryWarning()
